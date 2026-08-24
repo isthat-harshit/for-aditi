@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Aditi ❤️</title>
+<meta name="theme-color" content="#5b0010">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Montserrat:wght@400;500;600&display=swap');
+
+:root{
+  --wine:#39000b; --red:#7a0018; --rose:#b51236; --pink:#f5b8c4;
+  --cream:#fff4ed; --gold:#f4d19b;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0; color:var(--cream); background:
+  radial-gradient(circle at 50% 10%, #a90c2e 0, transparent 30%),
+  radial-gradient(circle at 15% 70%, #650015 0, transparent 28%),
+  linear-gradient(145deg,#180005,#4b000e 45%,#210006);
+  font-family:Montserrat,sans-serif; overflow-x:hidden;
+}
+body:before{
+  content:""; position:fixed; inset:0; pointer-events:none; opacity:.12;
+  background-image:radial-gradient(#fff 1px,transparent 1px);
+  background-size:28px 28px;
+}
+section{min-height:100vh; padding:80px 20px; display:flex; align-items:center; justify-content:center}
+.wrap{width:min(1000px,100%); margin:auto}
+.hero{text-align:center; min-height:100svh; position:relative}
+.kicker{letter-spacing:4px;text-transform:uppercase;font-size:.7rem;opacity:.75}
+.script{font-family:"Great Vibes",cursive}
+h1{font-family:"Great Vibes",cursive;font-size:clamp(4rem,18vw,9rem);font-weight:400;margin:12px 0;color:#fff}
+h2{font-family:"Cormorant Garamond",serif;font-size:clamp(2.3rem,8vw,4.5rem);margin:0 0 18px}
+p{line-height:1.8}
+.heart{margin-top:65px;margin-bottom:55px;
+  width:130px;height:130px;margin:25px auto; position:relative; cursor:pointer;
+  transform:rotate(-45deg); background:#c20b32;
+  filter:drop-shadow(0 0 30px #e13a5c);
+  animation:pulse 1.8s ease-in-out infinite;
+}
+.heart:before,.heart:after{content:"";position:absolute;width:130px;height:130px;border-radius:50%;background:#c20b32}
+.heart:before{top:-65px;left:0}.heart:after{left:65px;top:0}
+.heart span{position:absolute;z-index:2;transform:rotate(45deg);left:43px;top:49px;font-size:30px}
+@keyframes pulse{50%{transform:rotate(-45deg) scale(1.08);filter:drop-shadow(0 0 45px #ff5a7b)}}
+.scroll{margin-top:50px;opacity:.65;font-size:.75rem;letter-spacing:2px}
+.card{
+  background:rgba(255,255,255,.07); border:1px solid rgba(255,220,220,.18);
+  backdrop-filter:blur(12px); border-radius:28px; padding:28px;
+  box-shadow:0 20px 60px rgba(0,0,0,.25);
+}
+.center{text-align:center}
+.message{font-family:"Cormorant Garamond",serif;font-size:1.45rem}
+.timeline{display:grid;gap:18px;margin-top:35px}
+.memory{padding:22px;border-left:2px solid var(--pink);background:rgba(255,255,255,.05);border-radius:0 18px 18px 0}
+.memory small{color:var(--pink)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px;margin-top:30px}
+.polaroid{background:#fff;color:#280008;padding:10px 10px 24px;transform:rotate(var(--r));box-shadow:0 14px 30px #0006;min-height:220px}
+.polaroid .photo{height:170px;background:linear-gradient(135deg,#5a0012,#d54a68);display:grid;place-items:center;color:#ffd9df;font-size:2rem}.polaroid img{width:100%;height:190px;object-fit:cover;display:block}
+.polaroid p{font-family:"Great Vibes",cursive;font-size:1.35rem;margin:10px 5px 0}
+.reasons{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.reason{padding:25px;border-radius:22px;background:linear-gradient(135deg,#650016,#a90c2e);font-family:"Cormorant Garamond",serif;font-size:1.4rem}
+.reason b{display:block;color:var(--gold);font-family:Montserrat;font-size:.7rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:10px}
+.buttons{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-top:25px}
+button{
+  border:1px solid #ffc5cf55;background:#ffffff10;color:white;border-radius:16px;
+  padding:16px;cursor:pointer;font:500 .8rem Montserrat;transition:.25s;
+}
+button:hover{transform:translateY(-3px);background:#ffffff1c}
+.letter{display:none;margin-top:22px;animation:fade .4s ease}
+.letter.show{display:block}
+@keyframes fade{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.game{position:relative;height:360px;overflow:hidden;border-radius:24px;background:#210006;border:1px solid #ffffff1c;margin-top:25px}
+.fall{position:absolute;font-size:30px;cursor:pointer;animation:fall linear forwards}
+@keyframes fall{to{transform:translateY(390px) rotate(180deg);opacity:0}}
+.score{text-align:center;font-family:"Cormorant Garamond";font-size:1.5rem}
+.final{background:radial-gradient(circle at center,#900020 0,#360009 55%,#170004 100%);text-align:center}
+.final .card{max-width:760px}
+.final p{font-family:"Cormorant Garamond",serif;font-size:1.35rem}
+.gold{color:var(--gold)}
+.footer{padding:25px;text-align:center;opacity:.5;font-size:.65rem;letter-spacing:1px}
+@media(max-width:600px){section{padding:70px 16px}.card{padding:22px}.heart{width:105px;height:105px;margin-top:80px;margin-bottom:65px}.heart:before,.heart:after{width:105px;height:105px}.heart:before{top:-52px}.heart:after{left:52px}.heart span{left:35px;top:40px}}
+
+.quicknav{position:relative;z-index:5;display:flex;flex-wrap:wrap;justify-content:center;gap:9px;padding:0 16px 35px;background:linear-gradient(180deg,transparent,#180005)}
+.quicknav a{color:#ffe7e9;text-decoration:none;border:1px solid #ffc5cf33;background:#ffffff09;padding:9px 14px;border-radius:999px;font-size:.65rem;letter-spacing:1px;text-transform:uppercase}
+.quicknav a:hover{background:#ffffff18}
+.sectiontag{font-size:.65rem;letter-spacing:3px;text-transform:uppercase;color:#f4d19b;opacity:.8;margin-bottom:8px}
+</style>
+</head>
+<body>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="kicker">A little place made only for you</div>
+    <div class="heart" id="heart"><span>♥</span></div>
+    <h1>Aditi</h1>
+    <p class="script" style="font-size:2rem;margin:0">my Love</p>
+    <p style="max-width:560px;margin:25px auto">If you found this, you scanned the little secret I left for you. So… stay for a while. ❤️</p>
+    <div class="scroll">SCROLL INTO OUR LITTLE WORLD ↓</div>
+  </div>
+</section>
+
+<div class="quicknav">
+  <a href="#story">Our Story</a>
+  <a href="#memories">Memories</a>
+  <a href="#heart">For You</a>
+  <a href="#future">Our Future</a>
+</div>
+
+<section id="story">
+<div class="wrap">
+  <div class="card center">
+    <div class="sectiontag">Our Story</div><div class="kicker">11 August 2025 • and everything after</div>
+    <h2>Where our story began</h2>
+    <p class="message">
+      Somewhere between all the ordinary days, you became one of the most extraordinary parts of mine.
+      I don't know what the future has written for us, but I know I want to keep making memories with you.
+    </p>
+  </div>
+</div>
+</section>
+
+<section>
+<div class="wrap">
+  <div class="center">
+    <div class="kicker">Our story</div>
+    <h2>The little things that became us</h2>
+  </div>
+
+  <div class="timeline">
+    <div class="memory">
+      <small>11 AUGUST 2025</small>
+      <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.8rem;margin:8px 0">The beginning of us</h3>
+      <p>One date. One beginning. And somehow, it became the start of a story I now wouldn't trade for anything.</p>
+    </div>
+
+    <div class="memory">
+      <small>THE MEMORY THAT STILL MAKES ME LAUGH</small>
+      <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.8rem;margin:8px 0">Oggy & the Cockroaches 😭</h3>
+      <p>That ridiculous fight in front of Central Park over making each other's shoes dirty. Looking back, it was basically us behaving like Oggy and the Cockroaches — completely serious about something completely stupid.</p>
+    </div>
+
+    <div class="memory">
+      <small>THE MOMENT I KNEW</small>
+      <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.8rem;margin:8px 0">You moved my heart.</h3>
+      <p>I have never been the most sensitive person when it comes to other people's emotions. But when I saw you cry because of what you were going through with your family, something in me changed. Your pain reached a part of me I didn't even know was there. That was the moment I realised just how deeply I cared about you.</p>
+    </div>
+
+    <div class="memory">
+      <small>A LITTLE SECRET</small>
+      <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.8rem;margin:8px 0">You know the date. ❤️</h3>
+      <p>I'm not writing this one down. You don't need me to. If you know, you know.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section id="memories">
+<div class="wrap">
+  <div class="center"><div class="sectiontag">Memories</div><div class="kicker">Our memories</div><h2>Little pieces of us</h2><p style="max-width:620px;margin:0 auto;opacity:.8">Some are beautiful, some are silly, some are imperfect — but every one is ours.</p></div>
+  <div class="grid" id="photos">
+<div class="polaroid" style="--r:-3deg"><img src="images/memory1.jpg" alt="Memory 1"><p>Walking into the night, together.</p></div>
+<div class="polaroid" style="--r:2deg"><img src="images/memory2.jpg" alt="Memory 2"><p>Just you, me, and a quiet road.</p></div>
+
+<div class="polaroid" style="--r:3deg"><img src="images/memory4.jpg" alt="Memory 4"><p>One of my favourite faces to look at.</p></div>
+<div class="polaroid" style="--r:-2deg"><img src="images/memory5.jpg" alt="Memory 5"><p>You, being effortlessly you.</p></div>
+<div class="polaroid" style="--r:2deg"><img src="images/memory6.jpg" alt="Memory 6"><p>A hand I'll always want to hold.</p></div>
+<div class="polaroid" style="--r:-3deg"><img src="images/memory7.jpg" alt="Memory 7"><p>Another version of my favourite girl.</p></div>
+<div class="polaroid" style="--r:3deg"><img src="images/memory8.jpg" alt="Memory 8"><p>That smile. Enough said. ❤️</p></div>
+</div>
+<p class="center" style="opacity:.6;margin-top:30px">Every picture holds a little piece of us.</p>
+</div>
+</section>
+
+<section id="heart">
+<div class="wrap">
+  <div class="center"><div class="sectiontag">For You</div><div class="kicker">Things I love</div><h2>About you ❤️</h2></div>
+  <div class="reasons">
+    <div class="reason"><b>01</b>Your smile</div>
+    <div class="reason"><b>02</b>Your eyes</div>
+    <div class="reason"><b>03</b>Your hair</div>
+    <div class="reason"><b>04</b>Your boyfriend, of course. 😉</div>
+    <div class="reason"><b>05</b>Your overall personality</div>
+  </div>
+</div>
+</section>
+
+<section>
+<div class="wrap">
+  <div class="center"><div class="kicker">For every kind of day</div><h2>Open when…</h2></div>
+  <div class="buttons">
+    <button onclick="openLetter('miss')">💗 You miss me</button>
+    <button onclick="openLetter('low')">🥺 You feel low</button>
+    <button onclick="openLetter('sleep')">🌙 You can't sleep</button>
+    <button onclick="openLetter('angry')">😤 You're angry at me</button>
+    <button onclick="openLetter('loved')">❤️ You need a reminder</button>
+  </div>
+  <div id="miss" class="letter card center"><h2>I'm still here.</h2><p class="message">Close your eyes for a second and imagine me sitting beside you, holding your hand. Distance, silence, bad days—none of them change how much you mean to me.</p></div>
+  <div id="low" class="letter card center"><h2>Remember September 6, 2025.</h2><p class="message">Whenever you feel low, remember that one particular day that only you and I understand. Whatever that day made your heart feel—hold onto it. And remember that there is someone who wants to see you smile again, every single time.</p></div>
+  <div id="sleep" class="letter card center"><h2>Goodnight, Love. 🌙</h2><p class="message">Put your phone down, breathe slowly, and let your mind rest. Tomorrow needs your beautiful smile.</p></div>
+  <div id="angry" class="letter card center"><h2>Okay, okay… 😭</h2><p class="message">Even when you're angry with me, you're still my favourite person. Take your time. Then come back and let me make it up to you.</p></div>
+  <div id="loved" class="letter card center"><h2>You are loved.</h2><p class="message">Not because you have to be perfect. Not because you have to do anything for me. Just because you are you.</p></div>
+</div>
+</section>
+
+<section>
+<div class="wrap">
+  <div class="center"><div class="kicker">A tiny game</div><h2>Catch my heart ❤️</h2>
+  <p>Catch 10 hearts. There's something waiting at the end.</p>
+  <div class="score">Hearts caught: <span id="score">0</span> / 10</div>
+  <div class="game" id="game"></div>
+  </div>
+</div>
+</section>
+
+<section>
+<div class="wrap">
+  <div class="card">
+    <div class="center">
+      <div class="kicker">A letter I wanted you to have</div>
+      <h2>For my Love, Aditi</h2>
+    </div>
+    <div class="message">
+      <p>Dear Love,</p>
+      <p>I don't think I'm very good at putting feelings into words. Most of the time, I joke around, act stupid, or keep things to myself. So I thought maybe making you this little corner of the internet would be easier than trying to say everything perfectly.</p>
+      <p>I love the little things about you just as much as the big ones. Your smile, your eyes, your hair, your personality — and yes, your boyfriend too. 😂 But somewhere along the way, it stopped being about the things I like about you. It became about <em>you</em>.</p>
+      <p>I still think about the moment when I saw you crying because of what was happening with your family. I don't usually let other people's pain reach me very deeply. But seeing you hurt did something to me. It made me realise that your happiness matters to me in a way I can't really explain.</p>
+      <p>And then there are the completely ridiculous moments — like us fighting in front of Central Park over whose shoes were getting dirty, as if we were actually Oggy and the Cockroaches. Those are the moments I hope we never lose. The silly ones. The ordinary ones. The ones that don't look important until you realise later that they're the memories you miss the most.</p>
+      <p>I don't know exactly what every tomorrow will look like. But I know I want more of those tomorrows with you. More laughs. More stupid arguments. More pictures. More late conversations. More memories that only make sense to us.</p>
+      <p>So whenever life gets heavy, whenever you doubt yourself, or whenever you simply forget how special you are, come back here and remember one thing: there is someone who sees you, chooses you, and loves having you in his life.</p>
+      <p class="script" style="font-size:2.2rem;text-align:center">You are my favourite part of this story. ❤️</p>
+      <p style="text-align:right;margin-top:35px">Always,<br><span class="gold">Harshit</span></p>
+    </div>
+  </div>
+</div>
+</section>
+
+
+<section>
+<div class="wrap">
+  <div class="card center">
+    <div class="sectiontag">One Moment</div>
+    <div class="kicker">If I could freeze one moment…</div>
+    <h2>This one.</h2>
+    <img src="images/memory1.jpg" alt="A moment together" style="width:100%;max-height:520px;object-fit:contain;border-radius:20px;background:#210006;margin:15px 0 20px">
+    <p class="message">I don't think you realised it at the time, but I remember this moment. Not because everything was perfect, but because it was ours. These are the moments I wish I could press pause on and keep for a little longer.</p>
+  </div>
+</div>
+</section>
+
+<section>
+<div class="wrap">
+  <div class="center"><div class="sectiontag">Things I Don't Say Enough</div><h2>But I hope you know.</h2></div>
+  <div class="reasons">
+    <div class="reason"><b>01</b>I notice when you're not okay, even when you say you are.</div>
+    <div class="reason"><b>02</b>I'm genuinely proud of you — including for the things you think are too small to matter.</div>
+    <div class="reason"><b>03</b>Your laugh can change the entire mood of my day.</div>
+    <div class="reason"><b>04</b>You never have to be perfect around me.</div>
+    <div class="reason"><b>05</b>I'm really glad it was you.</div>
+  </div>
+</div>
+</section>
+
+<section>
+<div class="wrap">
+  <div class="card center">
+    <div class="sectiontag">For The Difficult Days</div>
+    <div class="kicker">If you ever forget…</div>
+    <h2>Come back here.</h2>
+    <p class="message">If you ever forget how beautiful you are… I'll remind you.</p>
+    <p class="message">If you ever forget how capable you are… I'll remind you.</p>
+    <p class="message">If you ever feel like you're alone… look for me.</p>
+    <p class="message">And if you ever forget how much I love you… come back here.</p>
+    <p class="script" style="font-size:3rem;margin-top:30px">❤️</p>
+  </div>
+</div>
+</section>
+
+<section id="future">
+<div class="wrap">
+  <div class="center"><div class="sectiontag">Our Future</div><h2>Things we haven't done yet</h2>
+  <p style="opacity:.8">A few little boxes for the future.</p></div>
+  <div class="reasons">
+    <div class="reason"><b>☐ 01</b>Take a random trip with no proper plan.</div>
+    <div class="reason"><b>☐ 02</b>Watch a sunrise together.</div>
+    <div class="reason"><b>☐ 03</b>Take 100 terrible pictures in one day.</div>
+    <div class="reason"><b>☐ 04</b>Have another completely stupid argument. 😂</div>
+    <div class="reason"><b>☐ 05</b>Make a memory we'll still talk about years later.</div>
+    <div class="reason"><b>☐ 06</b>Grow old enough to laugh at all of this.</div>
+    <div class="reason"><b>☐ 07</b>Add a thousand more.</div>
+  </div>
+</div>
+</section>
+
+<section>
+<div class="wrap">
+  <div class="card center">
+    <div class="sectiontag">One Last Question</div>
+    <div class="kicker">Before you leave</div>
+    <h2>Would you choose me again?</h2>
+    <div class="buttons">
+      <button onclick="chooseMe()">YES ❤️</button>
+      <button onclick="chooseMe()">Obviously 🙄</button>
+    </div>
+    <div id="choice" style="display:none;margin-top:25px">
+      <p class="script" style="font-size:2.7rem">Good. ❤️</p>
+      <p class="message">Because I'm choosing you too.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section>
+<div class="wrap">
+  <div class="card center">
+    <div class="sectiontag">Hear It From Me</div>
+    <div class="kicker">A little message in my voice</div>
+    <h2>For my Love</h2>
+    <p class="message">I wanted you to hear this one from me.</p>
+    <div style="padding:25px;border:1px solid #ffc5cf33;border-radius:20px;margin-top:20px;background:#ffffff08">
+      <div style="font-size:2.2rem;margin-bottom:12px">🎙️❤️</div>
+      <audio controls preload="metadata" style="width:100%;max-width:520px">
+        <source src="audio/harshit_voice.m4a" type="audio/mp4">
+        Your browser does not support the audio player.
+      </audio>
+    </div>
+    <p class="message" style="margin-top:28px">
+      “Hello, Love. If you're listening to this, you've reached the end.
+      I don't really know how to say this without getting embarrassed… but I love you.
+      I love you so much, and I'll always love you. Just remember that.”
+    </p>
+  </div>
+</div>
+</section>
+
+<section class="final">
+<div class="wrap">
+  <div class="card">
+    <div class="kicker gold">You made it to the end</div>
+    <h2>One last thing, Aditi…</h2>
+    <p>
+      I could give you flowers, chocolates, gifts and a hundred little things,
+      but none of them would be enough to explain what you mean to me.
+    </p>
+    <p>
+      You have become a part of my favourite memories, my happiest thoughts,
+      and the little moments I find myself smiling about for no reason.
+    </p>
+    <p>
+      Thank you for being you. Thank you for every laugh, every conversation,
+      every silly moment, every quiet moment, and every memory we've made.
+    </p>
+    <p class="script" style="font-size:2.5rem">I love you, my Love. ❤️</p>
+    <p class="gold">— Harshit</p>
+  </div>
+</div>
+</section>
+
+<div class="footer">Made with love • Harshit → Aditi • 11.08.2025</div>
+
+<script>
+function openLetter(id){
+  document.querySelectorAll('.letter').forEach(x=>x.classList.remove('show'));
+  document.getElementById(id).classList.add('show');
+  document.getElementById(id).scrollIntoView({behavior:'smooth',block:'center'});
+}
+const game=document.getElementById('game');
+const scoreEl=document.getElementById('score');
+let score=0, gameStarted=false;
+function spawn(){
+  if(score>=10) return;
+  const h=document.createElement('div');
+  h.className='fall'; h.textContent=['❤️','💗','💕','💖'][Math.floor(Math.random()*4)];
+  h.style.left=(Math.random()*88+3)+'%';
+  h.style.top='-45px';
+  h.style.animationDuration=(2.2+Math.random()*1.6)+'s';
+  h.onclick=()=>{
+    score++; scoreEl.textContent=score; h.remove();
+    if(score>=10){
+      game.innerHTML='<div style="height:100%;display:grid;place-items:center;text-align:center;padding:30px"><div><div style="font-size:55px">❤️</div><h2 style="margin:10px 0">You caught it!</h2><p style="font-family:Montserrat;font-size:.8rem">Just like you caught my heart.</p></div></div>';
+    }
+  };
+  game.appendChild(h);
+  setTimeout(()=>h.remove(),4500);
+}
+setInterval(()=>{ if(gameStarted && score<10) spawn(); },650);
+game.addEventListener('click',()=>gameStarted=true,{once:true});
+document.getElementById('heart').addEventListener('click',()=>{
+  document.querySelector('section:nth-of-type(2)').scrollIntoView({behavior:'smooth'});
+});
+
+function chooseMe(){
+  const el=document.getElementById('choice');
+  el.style.display='block';
+  el.scrollIntoView({behavior:'smooth',block:'center'});
+}
+</script>
+</body>
+</html>
