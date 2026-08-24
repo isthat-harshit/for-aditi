@@ -86,10 +86,124 @@ button:hover{transform:translateY(-3px);background:#ffffff1c}
 .quicknav a{color:#ffe7e9;text-decoration:none;border:1px solid #ffc5cf33;background:#ffffff09;padding:9px 14px;border-radius:999px;font-size:.65rem;letter-spacing:1px;text-transform:uppercase}
 .quicknav a:hover{background:#ffffff18}
 .sectiontag{font-size:.65rem;letter-spacing:3px;text-transform:uppercase;color:#f4d19b;opacity:.8;margin-bottom:8px}
+/* ===== OPENING SCREEN ===== */
+
+#opening-screen{
+  position:fixed;
+  inset:0;
+  z-index:9999;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  background:
+    radial-gradient(circle at 50% 35%, #a90c2e 0, transparent 30%),
+    linear-gradient(145deg,#180005,#4b000e 50%,#210006);
+  transition:opacity 1s ease, visibility 1s ease;
+}
+
+#opening-screen.hide{
+  opacity:0;
+  visibility:hidden;
+  pointer-events:none;
+}
+
+.opening-content{
+  width:min(90%,600px);
+  animation:openingFade 1.5s ease;
+}
+
+.opening-small{
+  letter-spacing:5px;
+  text-transform:uppercase;
+  font-size:.7rem;
+  color:var(--gold);
+  opacity:.85;
+  margin-bottom:20px;
+}
+
+.opening-title{
+  font-family:"Great Vibes",cursive;
+  font-size:clamp(4.5rem,20vw,8rem);
+  font-weight:400;
+  color:#fff;
+  margin:0;
+  text-shadow:0 0 30px #ff4164;
+}
+
+.opening-subtitle{
+  font-family:"Cormorant Garamond",serif;
+  font-size:1.5rem;
+  margin:15px 0 35px;
+  opacity:.9;
+}
+
+.opening-heart{
+  font-size:3rem;
+  margin-bottom:30px;
+  animation:openingHeart 1.8s ease-in-out infinite;
+}
+
+#begin-button{
+  border:1px solid #ffc5cf66;
+  background:#ffffff12;
+  color:white;
+  padding:16px 28px;
+  border-radius:999px;
+  font:500 .75rem Montserrat;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  cursor:pointer;
+  backdrop-filter:blur(10px);
+  transition:.3s;
+}
+
+#begin-button:hover{
+  transform:translateY(-3px) scale(1.03);
+  background:#ffffff22;
+}
+
+@keyframes openingHeart{
+  50%{
+    transform:scale(1.18);
+    filter:drop-shadow(0 0 20px #ff4164);
+  }
+}
+
+@keyframes openingFade{
+  from{
+    opacity:0;
+    transform:translateY(20px);
+  }
+  to{
+    opacity:1;
+    transform:none;
+  }
+}
 </style>
 </head>
 <body>
+<div id="opening-screen">
+  <div class="opening-content">
 
+    <div class="opening-small">
+      A little something for you
+    </div>
+
+    <div class="opening-heart">❤️</div>
+
+    <h1 class="opening-title">Aditi</h1>
+
+    <div class="opening-subtitle">
+      I made something for you…
+    </div>
+
+    <button id="begin-button" onclick="beginStory()">
+      Begin our story →
+    </button>
+
+  </div>
+</div>
 <section class="hero">
   <div class="wrap">
     <div class="kicker">A little place made only for you</div>
@@ -394,6 +508,17 @@ function chooseMe(){
   const el=document.getElementById('choice');
   el.style.display='block';
   el.scrollIntoView({behavior:'smooth',block:'center'});
+}
+function beginStory(){
+  const opening = document.getElementById("opening-screen");
+
+  opening.classList.add("hide");
+
+  setTimeout(() => {
+    document.getElementById("story").scrollIntoView({
+      behavior:"smooth"
+    });
+  }, 700);
 }
 </script>
 </body>
